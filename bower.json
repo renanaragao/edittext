@@ -1,0 +1,13 @@
+{
+  "name": "edittext",
+  "version": "0.0.0",
+  "homepage": "https://github.com/renanaragao/edittext",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "edittext": "*"
+  }
+}
