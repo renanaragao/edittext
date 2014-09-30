@@ -7,8 +7,8 @@ describe('edittext - ', function(){
 			+' 		<div class="edittext">                                                                                                                  '
 			+' 			<div class="edittext-controles">                                                                                                    '
 			+' 		        <button type="button" data-bold title="Negrito"  class=""><span class="icon icon-icon-bold"></span></button>                    '
-			+' 		        <button type="button" data-italico title="Itálico" class="ativo"><span class="icon icon-icon-italic"></span></button>                        '
-			+' 		        <button type="button" data-sublinhado title="Sublinhado" class=""><span class="icon icon-icon-underline"></span></button>                       '
+			+' 		        <button type="button" data-italico title="Itálico" class="ativo"><span class="icon icon-icon-italic"></span></button>           '
+			+' 		        <button type="button" data-sublinhado title="Sublinhado" class=""><span class="icon icon-icon-underline"></span></button>       '
 			+' 		        <button type="button" title="Tamanho da fonte" class=""><span class="icon icon-font-size"></span></button>                      '
 			+' 		        <button type="button" title="Cor da fonte" class=""><span class="icon icon-color-picker"></span></button>                       '
 			+' 		        <button type="button" title="Lista ordenada" class=""><span class="icon icon-icon-list-ordered"></span></button>                '
@@ -32,7 +32,7 @@ describe('edittext - ', function(){
    });
 
 
-	it('Deve colocar negrito no texto do iframe', function(){
+	it('Deve pegar texto do iframe', function(){
 		var div = $('div')
 		div.html(setUpHTMLFixture());
 

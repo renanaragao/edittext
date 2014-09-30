@@ -12,7 +12,6 @@ edittext.criarEditor = function(editor) {
 
 		button.addEventListener('click', function() {
 			iframe.bold();
-			this.
 		}, true);
 
 	});
