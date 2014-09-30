@@ -1,0 +1,5 @@
+describe('edittext - ', function(){
+
+	
+
+})
