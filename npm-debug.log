@@ -1,176 +1,113 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'install',
-1 verbose cli   '-',
-1 verbose cli   'grunt-cli' ]
+1 verbose cli   'install' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
 4 verbose node symlink C:\Program Files\nodejs\\node.exe
-5 verbose cache add [ '-', null ]
-6 verbose cache add name=undefined spec="-" args=["-",null]
-7 verbose parsed url { protocol: null,
-7 verbose parsed url   slashes: null,
-7 verbose parsed url   auth: null,
-7 verbose parsed url   host: null,
-7 verbose parsed url   port: null,
-7 verbose parsed url   hostname: null,
-7 verbose parsed url   hash: null,
-7 verbose parsed url   search: null,
-7 verbose parsed url   query: null,
-7 verbose parsed url   pathname: '-',
-7 verbose parsed url   path: '-',
-7 verbose parsed url   href: '-' }
-8 verbose cache add [ 'grunt-cli', null ]
-9 verbose cache add name=undefined spec="grunt-cli" args=["grunt-cli",null]
-10 verbose parsed url { protocol: null,
-10 verbose parsed url   slashes: null,
-10 verbose parsed url   auth: null,
-10 verbose parsed url   host: null,
-10 verbose parsed url   port: null,
-10 verbose parsed url   hostname: null,
-10 verbose parsed url   hash: null,
-10 verbose parsed url   search: null,
-10 verbose parsed url   query: null,
-10 verbose parsed url   pathname: 'grunt-cli',
-10 verbose parsed url   path: 'grunt-cli',
-10 verbose parsed url   href: 'grunt-cli' }
-11 silly lockFile 3bc15c8a- -
-12 verbose lock - C:\Users\renan.aragao.ALFA\AppData\Roaming\npm-cache\3bc15c8a-.lock
-13 silly lockFile 671ef8ac-grunt-cli grunt-cli
-14 verbose lock grunt-cli C:\Users\renan.aragao.ALFA\AppData\Roaming\npm-cache\671ef8ac-grunt-cli.lock
-15 silly lockFile 3bc15c8a- -
-16 silly lockFile 3bc15c8a- -
-17 silly lockFile 671ef8ac-grunt-cli grunt-cli
-18 silly lockFile 671ef8ac-grunt-cli grunt-cli
-19 verbose addNamed [ '-', '' ]
-20 verbose addNamed [ null, '*' ]
-21 silly lockFile c75fe0d4- -@
-22 verbose lock -@ C:\Users\renan.aragao.ALFA\AppData\Roaming\npm-cache\c75fe0d4-.lock
-23 verbose addNamed [ 'grunt-cli', '' ]
-24 verbose addNamed [ null, '*' ]
-25 silly lockFile d63f3d0b-grunt-cli grunt-cli@
-26 verbose lock grunt-cli@ C:\Users\renan.aragao.ALFA\AppData\Roaming\npm-cache\d63f3d0b-grunt-cli.lock
-27 silly addNameRange { name: '-', range: '*', hasData: false }
-28 verbose request where is /-
-29 verbose request registry https://registry.npmjs.org/
-30 verbose request id a8462ad702b917fc
-31 verbose url raw /-
-32 verbose url resolving [ 'https://registry.npmjs.org/', './-' ]
-33 verbose url resolved https://registry.npmjs.org/-
-34 verbose request where is https://registry.npmjs.org/-
-35 info trying registry request attempt 1 at 14:22:39
-36 http GET https://registry.npmjs.org/-
-37 silly addNameRange { name: 'grunt-cli', range: '*', hasData: false }
-38 verbose request where is /grunt-cli
-39 verbose request registry https://registry.npmjs.org/
-40 verbose url raw /grunt-cli
-41 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-cli' ]
-42 verbose url resolved https://registry.npmjs.org/grunt-cli
-43 verbose request where is https://registry.npmjs.org/grunt-cli
-44 info trying registry request attempt 1 at 14:22:39
-45 http GET https://registry.npmjs.org/grunt-cli
-46 http 404 https://registry.npmjs.org/-
-47 verbose headers { date: 'Mon, 29 Sep 2014 17:20:51 GMT',
-47 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
-47 verbose headers   'content-type': 'application/json',
-47 verbose headers   'cache-control': 'max-age=0',
-47 verbose headers   'content-length': '52',
-47 verbose headers   'accept-ranges': 'bytes',
-47 verbose headers   via: '1.1 varnish',
-47 verbose headers   age: '0',
-47 verbose headers   'x-served-by': 'cache-jfk1033-JFK',
-47 verbose headers   'x-cache': 'MISS',
-47 verbose headers   'x-cache-hits': '0',
-47 verbose headers   'x-timer': 'S1412011251.946929,VS0,VE23',
-47 verbose headers   'keep-alive': 'timeout=10, max=50',
-47 verbose headers   connection: 'Keep-Alive' }
-48 silly registry.get cb [ 404,
-48 silly registry.get   { date: 'Mon, 29 Sep 2014 17:20:51 GMT',
-48 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
-48 silly registry.get     'content-type': 'application/json',
-48 silly registry.get     'cache-control': 'max-age=0',
-48 silly registry.get     'content-length': '52',
-48 silly registry.get     'accept-ranges': 'bytes',
-48 silly registry.get     via: '1.1 varnish',
-48 silly registry.get     age: '0',
-48 silly registry.get     'x-served-by': 'cache-jfk1033-JFK',
-48 silly registry.get     'x-cache': 'MISS',
-48 silly registry.get     'x-cache-hits': '0',
-48 silly registry.get     'x-timer': 'S1412011251.946929,VS0,VE23',
-48 silly registry.get     'keep-alive': 'timeout=10, max=50',
-48 silly registry.get     connection: 'Keep-Alive' } ]
-49 silly lockFile c75fe0d4- -@
-50 silly lockFile c75fe0d4- -@
-51 http 200 https://registry.npmjs.org/grunt-cli
-52 silly registry.get cb [ 200,
-52 silly registry.get   { date: 'Mon, 29 Sep 2014 17:20:51 GMT',
-52 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-52 silly registry.get     etag: '"BNILZ9J1NTWZYUS8HRT5S3TNV"',
-52 silly registry.get     'content-type': 'application/json',
-52 silly registry.get     'cache-control': 'max-age=60',
-52 silly registry.get     'content-length': '19906',
-52 silly registry.get     'accept-ranges': 'bytes',
-52 silly registry.get     via: '1.1 varnish',
-52 silly registry.get     age: '587',
-52 silly registry.get     'x-served-by': 'cache-jfk1028-JFK',
-52 silly registry.get     'x-cache': 'HIT',
-52 silly registry.get     'x-cache-hits': '2',
-52 silly registry.get     'x-timer': 'S1412011251.913335,VS0,VE0',
-52 silly registry.get     vary: 'Accept',
-52 silly registry.get     'keep-alive': 'timeout=10, max=50',
-52 silly registry.get     connection: 'Keep-Alive' } ]
-53 silly addNameRange number 2 { name: 'grunt-cli', range: '*', hasData: true }
-54 silly addNameRange versions [ 'grunt-cli',
-54 silly addNameRange   [ '0.1.0',
-54 silly addNameRange     '0.1.1',
-54 silly addNameRange     '0.1.2',
-54 silly addNameRange     '0.1.3',
-54 silly addNameRange     '0.1.4',
-54 silly addNameRange     '0.1.5',
-54 silly addNameRange     '0.1.6',
-54 silly addNameRange     '0.1.7',
-54 silly addNameRange     '0.1.8',
-54 silly addNameRange     '0.1.9',
-54 silly addNameRange     '0.1.10',
-54 silly addNameRange     '0.1.11',
-54 silly addNameRange     '0.1.12',
-54 silly addNameRange     '0.1.13' ] ]
-55 verbose addNamed [ 'grunt-cli', '0.1.13' ]
-56 verbose addNamed [ '0.1.13', '0.1.13' ]
-57 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
-58 verbose lock grunt-cli@0.1.13 C:\Users\renan.aragao.ALFA\AppData\Roaming\npm-cache\28997503-grunt-cli-0-1-13.lock
-59 silly lockFile ab76c46e-g-grunt-cli-grunt-cli-0-1-13-tgz https://registry.npmjs.org/grunt-cli/-/grunt-cli-0.1.13.tgz
-60 verbose lock https://registry.npmjs.org/grunt-cli/-/grunt-cli-0.1.13.tgz C:\Users\renan.aragao.ALFA\AppData\Roaming\npm-cache\ab76c46e-g-grunt-cli-grunt-cli-0-1-13-tgz.lock
-61 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-cli/-/grunt-cli-0.1.13.tgz',
-61 verbose addRemoteTarball   'e9ebc4047631f5012d922770c39378133cad10f4' ]
-62 info retry fetch attempt 1 at 14:22:40
-63 verbose fetch to= C:\Users\RENANA~1.ALF\AppData\Local\Temp\npm-8948-1HHBxZhU\registry.npmjs.org\grunt-cli\-\grunt-cli-0.1.13.tgz
-64 http GET https://registry.npmjs.org/grunt-cli/-/grunt-cli-0.1.13.tgz
-65 http 200 https://registry.npmjs.org/grunt-cli/-/grunt-cli-0.1.13.tgz
-66 silly lockFile ab76c46e-g-grunt-cli-grunt-cli-0-1-13-tgz https://registry.npmjs.org/grunt-cli/-/grunt-cli-0.1.13.tgz
-67 silly lockFile ab76c46e-g-grunt-cli-grunt-cli-0-1-13-tgz https://registry.npmjs.org/grunt-cli/-/grunt-cli-0.1.13.tgz
-68 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
-69 silly lockFile 28997503-grunt-cli-0-1-13 grunt-cli@0.1.13
-70 silly lockFile d63f3d0b-grunt-cli grunt-cli@
-71 silly lockFile d63f3d0b-grunt-cli grunt-cli@
-72 error Error: not_found document not found: -
-72 error     at RegClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
-72 error     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
-72 error     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
-72 error     at Request.emit (events.js:98:17)
-72 error     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
-72 error     at Request.emit (events.js:117:20)
-72 error     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
-72 error     at IncomingMessage.emit (events.js:117:20)
-72 error     at _stream_readable.js:943:16
-72 error     at process._tickCallback (node.js:419:13)
-73 error If you need help, you may report this *entire* log,
-73 error including the npm and node versions, at:
-73 error     <http://github.com/npm/npm/issues>
-74 error System Windows_NT 6.2.9200
-75 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-" "grunt-cli"
-76 error cwd C:\Workspaces\Edittext\edittext
-77 error node -v v0.10.32
-78 error npm -v 1.4.28
-79 verbose exit [ 1, true ]
+5 warn package.json @ No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ 'C:\\Workspaces\\Edittext\\edittext',
+7 verbose install   [ 'grunt',
+7 verbose install     'grunt-contrib-jshint',
+7 verbose install     'grunt-contrib-qunit',
+7 verbose install     'grunt-contrib-watch',
+7 verbose install     'jasmine',
+7 verbose install     'karma',
+7 verbose install     'karma-chrome-launcher',
+7 verbose install     'karma-cli',
+7 verbose install     'karma-jasmine',
+7 verbose install     'karma-phantomjs-launcher',
+7 verbose install     'jquery',
+7 verbose install     'jasmine-jquery',
+7 verbose install     'karma-jasmine-jquery' ] ]
+8 info preinstall @
+9 warn package.json jasmine@2.0.1 No README data
+10 warn package.json karma-chrome-launcher@0.1.4 No README data
+11 warn package.json karma-phantomjs-launcher@0.1.4 No README data
+12 verbose readDependencies using package.json deps
+13 verbose already installed skipping grunt@~0.4.5 C:\Workspaces\Edittext\edittext
+14 verbose already installed skipping grunt-contrib-jshint@~0.10.0 C:\Workspaces\Edittext\edittext
+15 verbose already installed skipping grunt-contrib-qunit@~0.5.2 C:\Workspaces\Edittext\edittext
+16 verbose already installed skipping grunt-contrib-watch@~0.6.1 C:\Workspaces\Edittext\edittext
+17 verbose already installed skipping jasmine@2.0.1 C:\Workspaces\Edittext\edittext
+18 verbose already installed skipping karma@* C:\Workspaces\Edittext\edittext
+19 verbose already installed skipping karma-chrome-launcher@^0.1.4 C:\Workspaces\Edittext\edittext
+20 verbose already installed skipping karma-cli@* C:\Workspaces\Edittext\edittext
+21 verbose already installed skipping karma-jasmine@* C:\Workspaces\Edittext\edittext
+22 verbose already installed skipping karma-phantomjs-launcher@* C:\Workspaces\Edittext\edittext
+23 verbose already installed skipping jquery@* C:\Workspaces\Edittext\edittext
+24 verbose cache add [ 'jasmine-jquery@2.0.0', null ]
+25 verbose cache add name=undefined spec="jasmine-jquery@2.0.0" args=["jasmine-jquery@2.0.0",null]
+26 verbose parsed url { protocol: null,
+26 verbose parsed url   slashes: null,
+26 verbose parsed url   auth: null,
+26 verbose parsed url   host: null,
+26 verbose parsed url   port: null,
+26 verbose parsed url   hostname: null,
+26 verbose parsed url   hash: null,
+26 verbose parsed url   search: null,
+26 verbose parsed url   query: null,
+26 verbose parsed url   pathname: 'jasmine-jquery@2.0.0',
+26 verbose parsed url   path: 'jasmine-jquery@2.0.0',
+26 verbose parsed url   href: 'jasmine-jquery@2.0.0' }
+27 verbose already installed skipping karma-jasmine-jquery@* C:\Workspaces\Edittext\edittext
+28 verbose cache add name="jasmine-jquery" spec="2.0.0" args=["jasmine-jquery","2.0.0"]
+29 verbose parsed url { protocol: null,
+29 verbose parsed url   slashes: null,
+29 verbose parsed url   auth: null,
+29 verbose parsed url   host: null,
+29 verbose parsed url   port: null,
+29 verbose parsed url   hostname: null,
+29 verbose parsed url   hash: null,
+29 verbose parsed url   search: null,
+29 verbose parsed url   query: null,
+29 verbose parsed url   pathname: '2.0.0',
+29 verbose parsed url   path: '2.0.0',
+29 verbose parsed url   href: '2.0.0' }
+30 verbose addNamed [ 'jasmine-jquery', '2.0.0' ]
+31 verbose addNamed [ '2.0.0', '2.0.0' ]
+32 silly lockFile 319aa84a-jasmine-jquery-2-0-0 jasmine-jquery@2.0.0
+33 verbose lock jasmine-jquery@2.0.0 C:\Users\renan.aragao.ALFA\AppData\Roaming\npm-cache\319aa84a-jasmine-jquery-2-0-0.lock
+34 verbose request where is /jasmine-jquery
+35 verbose request registry https://registry.npmjs.org/
+36 verbose request id 0c8a7ee5e9712052
+37 verbose url raw /jasmine-jquery
+38 verbose url resolving [ 'https://registry.npmjs.org/', './jasmine-jquery' ]
+39 verbose url resolved https://registry.npmjs.org/jasmine-jquery
+40 verbose request where is https://registry.npmjs.org/jasmine-jquery
+41 info trying registry request attempt 1 at 11:32:17
+42 verbose etag "6GB73LB4GIS08LF2WD2CKRD7E"
+43 http GET https://registry.npmjs.org/jasmine-jquery
+44 http 304 https://registry.npmjs.org/jasmine-jquery
+45 silly registry.get cb [ 304,
+45 silly registry.get   { date: 'Tue, 30 Sep 2014 14:30:27 GMT',
+45 silly registry.get     server: 'Apache',
+45 silly registry.get     via: '1.1 varnish',
+45 silly registry.get     'last-modified': 'Tue, 30 Sep 2014 14:30:28 GMT',
+45 silly registry.get     'cache-control': 'max-age=60',
+45 silly registry.get     etag: '"6GB73LB4GIS08LF2WD2CKRD7E"',
+45 silly registry.get     'x-served-by': 'cache-jfk1023-JFK',
+45 silly registry.get     'x-cache': 'MISS',
+45 silly registry.get     'x-cache-hits': '0',
+45 silly registry.get     'x-timer': 'S1412087427.672798,VS0,VE362',
+45 silly registry.get     vary: 'Accept',
+45 silly registry.get     'content-length': '0',
+45 silly registry.get     'keep-alive': 'timeout=10, max=50',
+45 silly registry.get     connection: 'Keep-Alive' } ]
+46 verbose etag https://registry.npmjs.org/jasmine-jquery from cache
+47 silly lockFile 319aa84a-jasmine-jquery-2-0-0 jasmine-jquery@2.0.0
+48 silly lockFile 319aa84a-jasmine-jquery-2-0-0 jasmine-jquery@2.0.0
+49 error Error: version not found: jasmine-jquery@2.0.0
+49 error     at C:\Program Files\nodejs\node_modules\npm\lib\cache\add-named.js:125:12
+49 error     at saved (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\get.js:167:7)
+49 error     at Object.oncomplete (fs.js:107:15)
+50 error If you need help, you may report this *entire* log,
+50 error including the npm and node versions, at:
+50 error     <http://github.com/npm/npm/issues>
+51 error System Windows_NT 6.2.9200
+52 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+53 error cwd C:\Workspaces\Edittext\edittext
+54 error node -v v0.10.32
+55 error npm -v 1.4.28
+56 verbose exit [ 1, true ]

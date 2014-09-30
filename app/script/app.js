@@ -1,5 +1,10 @@
 (function(){
-	var iframe = document.querySelectorAll('.edittext > .edittext-input > iframe')[0];
-	iframe.contentDocument.designMode = 'on';
+	var editores = document.querySelectorAll('.edittext');
+
+	var countEditores = editores.length;
+
+	for (var i = 0; i < countEditores; i++) {
+		edittext.criarEditor(editores[0]);
+	};
 
 })();

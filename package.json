@@ -7,10 +7,14 @@
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-qunit": "~0.5.2",
     "grunt-contrib-watch": "~0.6.1",
+    "jasmine": "2.0.1",
     "karma": "*",
     "karma-chrome-launcher": "^0.1.4",
     "karma-cli": "*",
     "karma-jasmine": "*",
-    "karma-phantomjs-launcher": "*"
+    "karma-phantomjs-launcher": "*",
+	  "jquery": "*",
+    "jasmine-jquery": "*",
+    "karma-jasmine-jquery": "*"
   }
 }

@@ -10,21 +10,24 @@
 	<div style="width: 800px; height: 800px;">
 		<div class="edittext">
 			<div class="edittext-controles">
-		        <button type="button" title="Negrito" class=""><span class="icon icon-icon-bold"></span></button>
-		        <button type="button" title="Itálico" class="ativo"><span class="icon icon-icon-italic"></span></button>
-		        <button type="button" title="Sublinhado" class=""><span class="icon icon-icon-underline"></span></button>
-		        <button type="button" title="Tamanho da fonte" class=""><span class="icon icon-font-size"></span></button>
-		        <button type="button" title="Cor da fonte" class=""><span class="icon icon-color-picker"></span></button>
-		        <button type="button" title="Lista ordenada" class=""><span class="icon icon-icon-list-ordered"></span></button>
-		        <button type="button" title="Lista não ordenada" class=""><span class="icon icon-icon-list-unordered"></span></button>
-		        <button type="button" title="Adicionar link" class=""><span class="icon icon-icon-link"></span></button>
-		        <button type="button" title="Remover link" class=""><span class="icon icon-icon-unlink"></span></button>
+		        <button type="button" data-bold title="Negrito" class=""><span class="icon icon-icon-bold"></span></button>
+		        <button type="button" data-italic title="Itálico" ><span class="icon icon-icon-italic"></span></button>
+		        <button type="button" data-underline title="Sublinhado" class=""><span class="icon icon-icon-underline"></span></button>
+		        <button type="button" data-font-size title="Tamanho da fonte" class=""><span class="icon icon-font-size"></span></button>
+		        <button type="button" data-font-color title="Cor da fonte" class=""><span class="icon icon-color-picker"></span></button>
+		        <button type="button" data-list-order title="Lista ordenada" class=""><span class="icon icon-icon-list-ordered"></span></button>
+		        <button type="button" data-list-not-order title="Lista não ordenada" class=""><span class="icon icon-icon-list-unordered"></span></button>
+		        <button type="button" data-link title="Adicionar link" class=""><span class="icon icon-icon-link"></span></button>
+		        <button type="button" data-unlink title="Remover link" class=""><span class="icon icon-icon-unlink"></span></button>
 	    	</div>
 	    	<div class="edittext-input">
+	    		<textarea name="" style="display:none;" id="" cols="30" rows="10"></textarea>
 	    		<iframe></iframe>
 	    	</div>
 		</div>
 	</div>
+
+	<script type="text/javascript" src="app/script/edittext.js"></script>
 
 	<script type="text/javascript" src="app/script/app.js"></script>
 
