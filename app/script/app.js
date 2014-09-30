@@ -5,10 +5,10 @@
 
 	for (var i = 0; i < countEditores; i++) {
 
-		idEditor = editores[0].getAttribute('id')
+		idEditor = editores[i].getAttribute('id')
 
 		if(idEditor){
-			edittext[idEditor] = edittext.editor.criarEditor(editores[0]);
+			edittext[idEditor] = edittext.editor.criarEditor(editores[i]);
 		}
 	};
 
