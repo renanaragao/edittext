@@ -7,7 +7,7 @@
 	<title>Edit Text</title>
 </head>
 <body>
-	<div style="width: 800px; height: 800px;">
+	<div style="width: 800px; height: 200px;">
 		<div class="edittext" id="myEditor">
 			<div class="edittext-controles">
 		        <button type="button" data-command="bold" title="Negrito" class=""><span class="icon icon-icon-bold"></span></button>
@@ -26,10 +26,26 @@
 	    	</div>
 		</div>
 	</div>
-
+	
+	<button onclick="getDataFromEditor()">Clique</button>
+	<div id="textoDigitado"></div>
+	
+	<br />
+	<input type="text" id="inputHtml" />
+	<button onclick="setDataToEditor()">Clique</button>
+	
+	
 	<script type="text/javascript" src="app/script/edittext.js"></script>
 
 	<script type="text/javascript" src="app/script/app.js"></script>
+	<script>
+		function getDataFromEditor(){
+			document.getElementById('textoDigitado').innerHTML = edittext.myEditor.getData();
+		}
 
+		function setDataToEditor(){
+			edittext.myEditor.setData(document.getElementById('inputHtml').value);
+		}
+	</script>
 </body>
 </html>

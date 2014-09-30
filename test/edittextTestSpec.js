@@ -4,7 +4,7 @@ describe('edittext - ', function(){
 
    function setUpHTMLFixture() {
 	return   ' 	<div style="width: 800px; height: 800px;">                                                                                                  '
-			+' 		<div class="edittext">                                                                                                                  '
+			+' 		<div class="edittext" id="myEditor">                                                                                                    '
 			+' 			<div class="edittext-controles">                                                                                                    '
 			+' 		        <button type="button" data-bold title="Negrito"  class=""><span class="icon icon-icon-bold"></span></button>                    '
 			+' 		        <button type="button" data-italico title="Itálico" class="ativo"><span class="icon icon-icon-italic"></span></button>           '
@@ -33,18 +33,30 @@ describe('edittext - ', function(){
 
 
 	it('Deve pegar texto do iframe', function(){
-		var div = $('div')
-		div.html(setUpHTMLFixture());
+		var div = document.createElement("DIV");
+
+		div.innerHTML = setUpHTMLFixture();
 
 		iframe = $('.edittext > .edittext-input > iframe');
-
-		editor.criarEditor(div.find('.edittext'));
 
 		bodyIframe = iframe.find('body');
 
 		bodyIframe.innerText = 'Teste';
 
-		expect('Teste', bodyIframe.text())
+		var editores = div.querySelectorAll('.edittext');;
+
+		var countEditores = editores.length;
+
+		for (var i = 0; i < countEditores; i++) {
+
+			idEditor = editores[i].getAttribute('id')
+
+			if(idEditor){
+				editor[idEditor] = editor.editor.criarEditor(editores[i]);
+			}
+		};
+
+		expect('Teste', editor.myEditor.getData())
 	})
 
 })

@@ -11,10 +11,6 @@ edittext.editor = {
 
 		iframe.contentDocument.designMode = 'on';
 
-		button.addEventListener('click', function() {
-			iframe.bold();
-		}, true);
-
 		buttons.forEach(function(button) {
 
 			button.addEventListener('click', function() {
@@ -22,5 +18,14 @@ edittext.editor = {
 			}, true);
 
 		});
+
+		return {
+			getData: function(){
+				return iframe.contentDocument.body.innerHTML;
+			},
+			setData: function(data){
+				iframe.contentDocument.body.innerHTML = data;
+			}
+		};
 	}
 };
