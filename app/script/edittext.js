@@ -2,38 +2,21 @@
 
 var edittext = edittext || {};
 
-edittext.criarEditor = function(editor) {
+edittext.editor = {
+	criarEditor: function(editor) {
 
-	var buttons = [].slice.call(editor.querySelectorAll('.edittext-controles > a'));
+		var buttons = [].slice.call(editor.querySelectorAll('.edittext-controles > button'));
 
-	var iframe = new Frame(editor.querySelectorAll('.edittext-input > iframe')[0]);
+		var iframe = editor.querySelectorAll('.edittext-input > iframe')[0];
 
-	buttons.forEach(function(button) {
+		iframe.contentDocument.designMode = 'on';
 
-		button.addEventListener('click', function() {
-			iframe.bold();
-			this.
-		}, true);
+		buttons.forEach(function(button) {
 
-	});
+			button.addEventListener('click', function() {
+				iframe.contentDocument.execCommand(this.getAttribute('data-command'), false, null);
+			}, true);
 
-}
-
-function Frame(iframe) {
-
-	var self = this;
-	var _iframe = iframe;
-
-	var content = function() {
-
-		_iframe.contentDocument.designMode = 'on';
-
-		return _iframe.contentDocument;
-
-	}();
-
-	self.bold = function() {
-		content.execCommand('bold', false, null);
+		});
 	}
-
-}
+};
