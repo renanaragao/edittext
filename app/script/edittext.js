@@ -13,9 +13,7 @@ edittext.editor = {
 
 		buttons.forEach(function(button) {
 
-			button.addEventListener('click', function() {
-				iframe.contentDocument.execCommand(this.getAttribute('data-command'), false, null);
-			}, true);
+			button.addEventListener('click', edittext.comandoFactory.criar(iframe, button.getAttribute('data-command')), true);
 
 		});
 
