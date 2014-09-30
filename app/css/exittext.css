@@ -1,2 +1,46 @@
 .edittext{
 }
+
+.edittext button {
+  background-color: transparent;
+  border: 0px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.edittext button:hover{
+  color: #428bca;
+}
+
+.edittext button.ativo{
+  color: #428bca;
+}
+
+
+.edittext button span{
+  font-size: 18px;
+}
+
+.edittext-input {
+  width: 100%;
+}
+
+.edittext-input iframe{
+  overflow: auto;
+  width: 100%;
+  border: 1px solid #000000;
+}
+
+.edittext-controles {
+  width: 100%;
+  border: 1px solid #000000;
+}
+
+.icon-icon-bold, .icon-icon-underline, .icon-icon-italic{
+  font-size: 20px !important;
+}
+
+.icon-font-size{
+  font-size: 17px !important;
+}

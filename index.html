@@ -2,10 +2,31 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" type="text/css" href="app/css/exittext.css">
+	<link rel="stylesheet" href="app/css/icons.css">
 	<meta charset="UTF-8">
 	<title>Edit Text</title>
 </head>
 <body>
-	<div class="edittext"></div>
+	<div style="width: 800px; height: 800px;">
+		<div class="edittext">
+			<div class="edittext-controles">
+		        <button type="button" title="Negrito" class=""><span class="icon icon-icon-bold"></span></button>
+		        <button type="button" title="Itálico" class="ativo"><span class="icon icon-icon-italic"></span></button>
+		        <button type="button" title="Sublinhado" class=""><span class="icon icon-icon-underline"></span></button>
+		        <button type="button" title="Tamanho da fonte" class=""><span class="icon icon-font-size"></span></button>
+		        <button type="button" title="Cor da fonte" class=""><span class="icon icon-color-picker"></span></button>
+		        <button type="button" title="Lista ordenada" class=""><span class="icon icon-icon-list-ordered"></span></button>
+		        <button type="button" title="Lista não ordenada" class=""><span class="icon icon-icon-list-unordered"></span></button>
+		        <button type="button" title="Adicionar link" class=""><span class="icon icon-icon-link"></span></button>
+		        <button type="button" title="Remover link" class=""><span class="icon icon-icon-unlink"></span></button>
+	    	</div>
+	    	<div class="edittext-input">
+	    		<iframe></iframe>
+	    	</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="app/app.js"></script>
+
 </body>
 </html>
