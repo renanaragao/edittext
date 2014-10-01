@@ -7,36 +7,15 @@
 	<title>Edit Text</title>
 </head>
 <body>
-	<div style="width: 800px; height: 200px;">
-		<div class="edittext" id="myEditor">
-			<div class="edittext-controles">
-		        <button type="button" data-command="bold" title="Negrito" class=""><span class="icon icon-icon-bold"></span></button>
-		        <button type="button" data-command="italic" title="Itálico" ><span class="icon icon-icon-italic"></span></button>
-		        <button type="button" data-command="underline" title="Sublinhado" class=""><span class="icon icon-icon-underline"></span></button>
-		        <button type="button" data-command="fontSize" title="Tamanho da fonte" class=""><span class="icon icon-font-size"></span></button>
-		        <button type="button" data-command="foreColor" title="Cor da fonte" class=""><span class="icon icon-color-picker"></span></button>
-		        <button type="button" data-command="insertorderedlist" title="Lista ordenada" class=""><span class="icon icon-icon-list-ordered"></span></button>
-		        <button type="button" data-command="insertunorderedlist" title="Lista não ordenada" class=""><span class="icon icon-icon-list-unordered"></span></button>
-		        <button type="button" data-command="createLink" title="Adicionar link" class=""><span class="icon icon-icon-link"></span></button>
-		        <button type="button" data-command="unLink" title="Remover link" class=""><span class="icon icon-icon-unlink"></span></button>
-		        <div class="edittext-color-picker">
-	        		<div class="picker-wrapper">
-			           <div class="picker"></div>
-			           <div class="picker-indicator"></div>
-			        </div>
-			        <div class="slider-wrapper">
-			           <div class="slider"></div>
-			           <div class="slider-indicator"></div>
-			        </div>
-	        	</div>
-	    	</div>
-	    	<div class="edittext-input">
-	    		<textarea name="" style="display:none;" id="" cols="30" rows="10"></textarea>
-	    		<iframe></iframe>
-	    	</div>
+	<div class="edittext" id="myEditor1">
+			
 		</div>
-
-	</div>
+		<div class="edittext" id="myEditor2">
+			
+		</div>
+		<div class="edittext" id="myEditor3">
+			
+		</div>
 	
 	<button onclick="getDataFromEditor()">Clique</button>
 	<div id="textoDigitado"></div>
@@ -67,11 +46,11 @@
 
 	<script>
 		function getDataFromEditor(){
-			document.getElementById('textoDigitado').innerHTML = edittext.myEditor.getData();
+			document.getElementById('textoDigitado').innerHTML = edittext.myEditor1.getData();
 		}
 
 		function setDataToEditor(){
-			edittext.myEditor.setData(document.getElementById('inputHtml').value);
+			edittext.myEditor1.setData(document.getElementById('inputHtml').value);
 		}
 	</script>
 </body>
