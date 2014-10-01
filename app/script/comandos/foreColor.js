@@ -15,7 +15,6 @@ edittext.ForeColor = function(iframe, editor) {
 		setColor: function(hex){
 
 			_iframe.execCommand('ForeColor', false, hex);
-			_editor.controles.editorColorPicker.colorPickerElement.style.display = 'none';
 
 		}
 	}

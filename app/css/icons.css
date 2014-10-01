@@ -38,13 +38,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-icon-bold:before {
+.icon-bold:before {
   content: "a";
 }
-.icon-icon-italic:before {
+.icon-italic:before {
   content: "b";
 }
-.icon-icon-underline:before {
+.icon-underline:before {
   content: "c";
 }
 .icon-font-size:before {
@@ -53,15 +53,18 @@
 .icon-color-picker:before {
   content: "e";
 }
-.icon-icon-list-ordered:before {
+.icon-list-ordered:before {
   content: "f";
 }
-.icon-icon-list-unordered:before {
+.icon-list-unordered:before {
   content: "g";
 }
-.icon-icon-link:before {
+.icon-link:before {
   content: "h";
 }
-.icon-icon-unlink:before {
+.icon-unlink:before {
   content: "i";
+}
+.icon-cancel:before {
+  content: "j";
 }
