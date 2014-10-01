@@ -3,7 +3,7 @@
 edittext = edittext || {};
 
 edittext.comandoFactory  = {
-	criar: function(piframe, command){
+	criar: function(editor, piframe, command){
 
 		var iframe = piframe.contentDocument;
 
@@ -15,7 +15,7 @@ edittext.comandoFactory  = {
 
 		if(command === 'fontSize') return new edittext.FontSize(iframe);
 
-		if(command === 'foreColor') return new edittext.ForeColor(iframe);
+		if(command === 'foreColor') return edittext.ForeColor(iframe, editor);
 
 		if(command === 'insertorderedlist') return new edittext.Insertorderedlist(iframe);
 

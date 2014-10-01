@@ -6,9 +6,11 @@ edittext.Editor = function(editor) {
 
 	var self = this, command;
 
-	var buttons = [].slice.call(editor.querySelectorAll('.edittext-controles > button'));
+	self.elment = editor;
 
-	var iframe = editor.querySelectorAll('.edittext-input > iframe')[0];
+	var buttons = [].slice.call(self.elment.querySelectorAll('.edittext-controles > button'));
+
+	var iframe = self.elment.querySelectorAll('.edittext-input > iframe')[0];
 
 	iframe.contentDocument.designMode = 'on';
 
@@ -16,14 +18,20 @@ edittext.Editor = function(editor) {
 
 		command = button.getAttribute('data-command');
 
-		self[command] = edittext.comandoFactory.criar(iframe, button.getAttribute('data-command'));
+		self[command] = edittext.comandoFactory.criar(self ,iframe, command);
 
-		button.addEventListener('click', self[command].executar, true);
+		button.addEventListener('click', function(){
+			self[this.getAttribute('data-command')].executar();
+		}, true);
+
 
 	});
 
 	self.controles = {
-		colorPicker: edittext.colorPickerFactory(editor, self.foreColor.setColor)
+		editorColorPicker: { 
+			colorPicker: edittext.colorPickerFactory(self.elment, self.foreColor.setColor),
+			colorPickerElement: self.elment.getElementsByClassName('edittext-color-picker')[0]
+		}
 	}
 
 	self.getData = function() {

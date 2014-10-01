@@ -1,18 +1,21 @@
 edittext = edittext || {};
 
-edittext.ForeColor = function(iframe) {
+edittext.ForeColor = function(iframe, editor) {
 
 	var _iframe = iframe;
+
+	var _editor = editor;
 
 	return {
 		executar: function() {
 
-			_iframe.execCommand('foreColor', false, hex);
+			_editor.controles.editorColorPicker.colorPickerElement.style.display = 'block';
 
 		},
 		setColor: function(hex){
 
-			_iframe.execCommand('foreColor', false, hex);
+			_iframe.execCommand('ForeColor', false, hex);
+			_editor.controles.editorColorPicker.colorPickerElement.style.display = 'none';
 
 		}
 	}
