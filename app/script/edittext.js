@@ -1,7 +1,5 @@
 'use strict';
 
-var edittext = edittext || {};
-
 edittext.editor = {
 	criarEditor: function(editor) {
 

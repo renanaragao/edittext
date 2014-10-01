@@ -1,7 +1,5 @@
 'use strict';
 
-edittext = edittext || {};
-
 edittext.Editor = function(editor) {
 
 	var self = this, command;

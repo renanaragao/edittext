@@ -3,6 +3,19 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+  phk: grunt.file.readJSON('package.json'),
+  concat: {
+	js:{
+	src:['app/plugin/flexiColorPicker/colorpicker.js',
+	'app/script/app.js',
+	'app/script/factory/*.js',
+	'app/script/comandos/*.js',
+	'app/script/editor.js',
+	'app/script/edittext.js',
+	'app/script/start.js'],
+	dest: 'builds/js/app.js'
+	}
+  },
     // Task configuration.
     jshint: {
       options: {
@@ -22,32 +35,26 @@ module.exports = function(grunt) {
       },
       gruntfile: {
         src: 'Gruntfile.js'
-      },
-      lib_test: {
-        src: ['lib/**/*.js', 'test/**/*.js']
       }
     },
-    qunit: {
-      files: ['test/**/*.html']
-    },
-    watch: {
-      gruntfile: {
-        files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
+	uglify : {
+      options : {
+        mangle : false
       },
-      lib_test: {
-        files: '<%= jshint.lib_test.src %>',
-        tasks: ['jshint:lib_test', 'qunit']
+      my_target : {
+        files : {
+          'builds/js/edittext.min.js' : [ 'builds/js/app.js' ]
+        }
       }
     }
   });
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
 
 };

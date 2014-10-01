@@ -3,10 +3,13 @@
     "node": ">= 0.10.0"
   },
   "devDependencies": {
+    "grunt-cli": "0.1.6",
     "grunt": "~0.4.5",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-qunit": "~0.5.2",
     "grunt-contrib-watch": "~0.6.1",
+	"grunt-contrib-concat": "~0.4.0",
+	"grunt-contrib-uglify": "*",
     "jasmine": "2.0.1",
     "karma": "*",
     "karma-chrome-launcher": "^0.1.4",
