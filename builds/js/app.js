@@ -658,7 +658,7 @@ edittext.Editor = function(editor) {
 
 			self[this.getAttribute('data-command')].executar();
 			self.change(self.getData());
-			
+
 		}, true);
 
 
@@ -678,6 +678,8 @@ edittext.Editor = function(editor) {
 	self.setData = function(data) {
 		iframe.contentDocument.body.innerHTML = data;
 	};
+
+	self.change = function(){}
 
 }
 
