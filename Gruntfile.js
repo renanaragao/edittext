@@ -4,20 +4,6 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
 
-  phk: grunt.file.readJSON('package.json'),
-  concat: {
-	js:{
-		src:['app/plugin/flexiColorPicker/colorpicker.js',
-		'app/script/app.js',
-		'app/script/factory/*.js',
-		'app/script/comandos/*.js',
-		'app/script/editor.js',
-		'app/script/edittext.js',
-		'app/script/start.js'],
-		dest: 'builds/js/app.js'
-	}
-  },
-
     phk: grunt.file.readJSON('package.json'),
     concat: {
       css: {
