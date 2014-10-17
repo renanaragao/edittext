@@ -1,2 +1,4 @@
 ====== TODO List ===
 Fazer funcionar no Mozila
+Adicionar maxlength
+Adicionar atalhos para os comandos e title nos botões

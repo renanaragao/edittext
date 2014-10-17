@@ -642,6 +642,12 @@ edittext.Editor = function(editor) {
 
 	iframe.contentDocument.designMode = 'on';
 
+	iframe.contentDocument.addEventListener('keyup', function(){
+
+		self.change(self.getData());
+
+	}, false)
+
 	buttons.forEach(function(button) {
 
 		command = button.getAttribute('data-command');
@@ -649,7 +655,10 @@ edittext.Editor = function(editor) {
 		self[command] = edittext.comandoFactory.criar(self, iframe, command);
 
 		button.addEventListener('click', function() {
+
 			self[this.getAttribute('data-command')].executar();
+			self.change(self.getData());
+
 		}, true);
 
 
@@ -669,6 +678,8 @@ edittext.Editor = function(editor) {
 	self.setData = function(data) {
 		iframe.contentDocument.body.innerHTML = data;
 	};
+
+	self.change = function(){}
 
 }
 

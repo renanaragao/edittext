@@ -1,6 +1,6 @@
 {
   "name": "edittext",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/renanaragao/edittext",
   "moduleType": [
     "node"
@@ -9,5 +9,14 @@
   "private": true,
   "devDependencies": {
     "edittext": "*"
-  }
+  },
+  "description": "Editor de texto para a web.",
+  "main": "[\"builds/css/edittext.min.css\", \"builds/js/edittext.min.js\"]",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
